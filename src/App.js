@@ -2,6 +2,7 @@ import React from "react";
 import Info from "./components/info";
 import Weather from "./components/weather";
 import Form from "./components/form";
+import "./App.css"
 
 const api = "fe6e126c90ade2cba04635a773627ac8";
 
@@ -44,7 +45,7 @@ class App extends React.Component{
 
   render(){
     return(
-      <div>
+      <div className='container'>
         <Info />
         <Weather
           temp={this.state.temp}
